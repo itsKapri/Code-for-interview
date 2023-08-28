@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hello">
+        <h1>
+            this is dom partics
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates iure, alias ea facere enim vitae,
+            laboriosam ipsam doloremque obcaecati, eius quae sapiente quo culpa sequi. Incidunt nesciunt, eaque voluptas
+            nobis eum quos nam ex. Eum.
+        </p>
+    </div>
+
+    <div class="second" >
+        <h2>second</h2>
+        <p onclick="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates iure, alias ea facere enim vitae,
+            laboriosam ipsam doloremque obcaecati, eius quae sapiente quo culpa sequi. Incidunt nesciunt, eaque voluptas
+            nobis eum quos nam ex. Eum.
+        </p>
+    </div>
+
+    <div onclick="div()" style="padding: 10px; border: 2px solid red;">
+        div
+        <form action="" style="padding: 10px; border: 2px solid red;"onclick="from()">
+            form
+            <button style="padding: 10px; border: 2px solid red;"onclick="btn()">normal</button>
+        </form>
+    </div>
+
+
+    <script>
+        let a=document.querySelector(".second")
+        let b=document.getElementsByClassName("hello")
+        console.log(b);
+            console.log(a);
+            function div(){
+                alert("this is div")  
+            }
+            function from(){
+                alert("this is from")  
+                event.stopPropagation(); 
+                
+            }
+            function btn(){
+                alert("this is btn")  
+                event.stopPropagation(); 
+            }
+
+
+    </script>
+
+
+</body>
+
+</html>
